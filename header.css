@@ -1,0 +1,147 @@
+/* Header style start */
+.header {
+  display: flex;
+  width: 100%;
+  background: black;
+  padding: 0;
+  z-index: 10;
+  height: 69px;
+  box-shadow: 0px 0px 50px -24px #fff;
+  background-color: black;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header-fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  background-color: black;
+}
+.header-pc{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 50px -24px #fff;
+  margin-left: 19.3%;
+  z-index: 10;
+  background-color: black;
+}
+.header-phone{
+  display: none;
+}
+
+.header-logo{
+  margin-left: 19.6%;
+  z-index: 10;
+
+}
+
+.header-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 200;
+}
+
+.header-modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  padding: 1rem 1.5rem;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 24px;
+}
+
+.header-trigger{
+  display: none;
+}
+
+.header-button{
+  background-color: black;
+  height: 100%;
+  color: white;
+  font-size: 24px;
+  border: none;
+}
+
+.header-close-button {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  font-size: 100%;
+  height: auto;
+  position: relative;
+  color: #fff;
+  background: none;
+  border: none;
+  margin: 24px;
+}
+
+.header-modal-links{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding-top: 45%;
+  gap: 2%;
+}
+
+.header-menu-icon{
+  width: 25px;
+  height:auto" 
+}
+
+.header-close{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+@media only screen  and (max-width: 1000px) {
+  .header-logo {
+      margin-left: 0;
+      z-index: 10;
+  }
+
+  .header-trigger{
+      display: block;
+      color: #fff;
+      width: auto;
+      background: none;
+      border: none;
+      margin-right: 20px;
+  }
+
+  .header-pc{
+      display: none;
+  }
+  
+  .header{
+      justify-content: space-between;
+  }
+}
+/* Header style finish */
